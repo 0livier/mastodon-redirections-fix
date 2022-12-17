@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Mastodon Redirection Fix",
     "description": "Remove unfair Mastodon redirection warnings. Bonus : change Elon's name to Space Karen.",
-    "version": "1.0",
+    "version": "1.1.0",
     "host_permissions": ["https://twitter.com/*"],
     "content_scripts": [
         {
