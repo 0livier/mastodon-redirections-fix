@@ -9,19 +9,12 @@ function replaceElonName(node) {
   }
 }
 
-// Avoid modification within the Tweet editor
-function isTweetEditor(node) {
-  return (
-    node.parentNode &&
-    node.parentNode.parentNode &&
-    node.parentNode.parentNode.classList.contains("public-DraftStyleDefault-block")
-  );
-}
-
 const observer = new MutationObserver((mutations) => {
+  const editorNode = document.getElementsByClassName("DraftEditor-root")[0];
   for (const mutation of mutations) {
     for (const node of mutation.addedNodes) {
-      if (!isTweetEditor(node)) replaceElonName(node);
+      // Avoid modification within the Tweet editor
+      if (!editorNode || !editorNode.contains(node)) replaceElonName(node);
     }
   }
 });

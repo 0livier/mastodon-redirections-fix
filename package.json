@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build": "rm fix-space-karen-*.zip; zip -9 -r fix-space-karen-$(grep '\"version\"' manifest.json | awk -F: '{print $2}' | sed 's/[\", ]//g').zip . -x README.md -x package.json -x images/input.png -x \"*.git*\" -x \"*.DS_Store*\" -x images/screenshot.png",
-        "process-icons": "cd images;convert input.png -resize 128x128 input-128.png;convert input.png -resize 64x64 input-64.png;convert input.png -resize 48x48 input-48.png;convert input.png -resize 32x32 input-32.png;convert input.png -resize 16x16 input-16.png"
+        "process-icons": "cd images;convert ../images-sources/input.png -resize 128x128 input-128.png;convert ../images-sources/input.png -resize 64x64 input-64.png;convert ../images-sources/input.png -resize 48x48 input-48.png;convert ../images-sources/input.png -resize 32x32 input-32.png;convert ../images-sources/input.png -resize 16x16 input-16.png;find . -name '*.png' -exec optipng -o7 {} \\;",
+        "build": "npm run process-icons; rm mastodon-redirections-fix-*.zip; zip -9 -r mastodon-redirections-fix-$(grep '\"version\"' manifest.json | awk -F: '{print $2}' | sed 's/[\", ]//g').zip . -x README.md -x package.json -x 'images-sources/*' -x '*.git*' -x '*.DS_Store*'"
     }
 }

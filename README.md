@@ -6,7 +6,7 @@ Under Elon Musk's new management, Twitter has banned [Mastodon](https://en.wikip
 
 This type of tactic is generally considered unethical and is not a legitimate way to compete in the market. It is important for businesses to compete on the quality and value of their products or services rather than trying to spread fear or uncertainty about their competitors. This type of behavior can also harm consumers, who may be misled by the false information and make choices that are not in their best interests.
 
-![Twitter screenshow showing a redirection warning, trying to create fear with unfair tactics](./images/mastodon-redirection.png)
+![Twitter screenshow showing a redirection warning, trying to create fear with unfair tactics](./images-sources/mastodon-redirection.png)
 
 This extension is designed to improve your Twitter experience by :
 
