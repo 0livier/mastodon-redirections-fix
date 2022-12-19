@@ -15,4 +15,4 @@ This extension is designed to improve your Twitter experience by :
 
 ## How to use it
 
-To use this extension, either install the extension manually or wait until it's available through the Chrome Web Store.
+To use this extension, install it through the [Chrome Web Store](https://chrome.google.com/webstore/detail/mastodon-redirections-fix/dleaknoafhnllflgdjpiekbaknmlhkfk).
