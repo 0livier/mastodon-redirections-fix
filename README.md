@@ -1,3 +1,5 @@
+Update 22 December > Twitter revert their approach and Mastodon links are not prevented anymore, so the main feature of this extension is not needed anymore.You can still install it to change the name of `Elon Musk` to `Space Karen`.
+
 # Mastodon Redirections Fix for Twitter
 
 ## Why?
